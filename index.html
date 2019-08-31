@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Transfer Learning Image Classifier</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <!-- Load the latest version of TensorFlow.js -->
   <script src="https://unpkg.com/@tensorflow/tfjs"></script>
   <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
@@ -14,13 +15,16 @@
 
 <body>
   <div id="console"></div>
-  <!-- Add webcam video element -->
-  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
 
-  <button id="class-a">Add A</button>
-  <button id="class-b">Add B</button>
-  <button id="class-c">Add C</button>
-  <button id="class-d">No Action</button>
+  <div>
+    <!-- Add webcam video element -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  </div>
+
+  <a class="button is-primary" id="class-a">Add A</a>
+  <a class="button is-primary" id="class-b">Add B</a>
+  <a class="button is-primary" id="class-c">Add C</a>
+  <a class="button is-danger" id="class-d">No Action</a>
 
   <script src="index.js"></script>
 </body>
